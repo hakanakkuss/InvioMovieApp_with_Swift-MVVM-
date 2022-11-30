@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteMovies" customModule="InvioChallenge" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8ar-mK-jm4">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cmu-qt-bxz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ro7-mc-Fl3">
+                            <rect key="frame" x="147.5" y="58" width="119" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="softBlue"/>
+                    <constraints>
+                        <constraint firstItem="ro7-mc-Fl3" firstAttribute="top" secondItem="Cmu-qt-bxz" secondAttribute="top" constant="58" id="7QC-Xi-7uN"/>
+                        <constraint firstItem="ro7-mc-Fl3" firstAttribute="centerY" secondItem="Cmu-qt-bxz" secondAttribute="centerY" id="aJa-ri-GaF"/>
+                        <constraint firstItem="ro7-mc-Fl3" firstAttribute="centerX" secondItem="Cmu-qt-bxz" secondAttribute="centerX" id="noR-5a-0pF"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ltK-4E-yx1">
+                    <rect key="frame" x="0.0" y="137" width="414" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Jd9-Us-PPC"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cmu-qt-bxz" firstAttribute="trailing" secondItem="Jd9-Us-PPC" secondAttribute="trailing" id="08q-Uu-By8"/>
+                <constraint firstItem="ltK-4E-yx1" firstAttribute="top" secondItem="Cmu-qt-bxz" secondAttribute="bottom" id="CBs-fh-ILr"/>
+                <constraint firstItem="ltK-4E-yx1" firstAttribute="trailing" secondItem="Jd9-Us-PPC" secondAttribute="trailing" id="K02-Fo-PqS"/>
+                <constraint firstItem="Cmu-qt-bxz" firstAttribute="top" secondItem="8ar-mK-jm4" secondAttribute="top" id="MRQ-vH-pWG"/>
+                <constraint firstAttribute="bottom" secondItem="ltK-4E-yx1" secondAttribute="bottom" id="WAi-QH-5I3"/>
+                <constraint firstItem="ltK-4E-yx1" firstAttribute="leading" secondItem="Jd9-Us-PPC" secondAttribute="leading" id="pay-Q2-M1x"/>
+                <constraint firstItem="Cmu-qt-bxz" firstAttribute="leading" secondItem="Jd9-Us-PPC" secondAttribute="leading" id="uE0-hd-NWG"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="softBlue">
+            <color red="0.39215686274509803" green="0.53333333333333333" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
